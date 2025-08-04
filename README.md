@@ -1,2 +1,4 @@
 # DevOps
- repositório para estudos
+**repositório para estudos**
+
+Repositório para realizar testes e atividades da faculdade.
