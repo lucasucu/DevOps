@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
   res.json({ Hello: 'World' });
 });
 
+// nova rota
+app.get('/ugabuga', (req, res) => {
+  res.json({ uga: 'buga' });
+});
+
 // Rota com parâmetro e query opcional
 app.get('/items/:item_id', (req, res) => {
   const item_id = parseInt(req.params.item_id);

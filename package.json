@@ -19,5 +19,6 @@
   "homepage": "https://github.com/lucasucu/DevOps#readme",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }
