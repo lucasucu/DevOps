@@ -1,20 +1,6 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
-// Rota principal
-app.get('/', (req, res) => {
-  res.json({ Hello: 'World' });
-});
-
-// Rota com parâmetro e query opcional
-app.get('/items/:item_id', (req, res) => {
-  const item_id = parseInt(req.params.item_id);
-  const q = req.query.q || null;
-  res.json({ item_id, q });
-});
-
-// Iniciar servidor
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+function somar() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  const res = n1 + n2;
+  document.getElementById("resultado").innerText = "Resultado: " + res;
+}
