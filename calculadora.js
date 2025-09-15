@@ -20,7 +20,7 @@ function dividir() {
   const n1 = parseFloat(document.getElementById("num1").value);
   const n2 = parseFloat(document.getElementById("num2").value);
   if (n2 === 0) {
-    document.getElementById("resultado").innerText = "Erro: divisão por zero!";
+    document.getElementById("resultado").innerText = "Erro: divisão p/ zero!";
   } else {
     const res = n1 / n2;
     document.getElementById("resultado").innerText = "Resultado: " + res;
