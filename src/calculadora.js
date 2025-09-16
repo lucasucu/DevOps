@@ -1,28 +1,33 @@
-function somar() {
+const { somar, subtrair, multiplicar, dividir } = require("./operacoes");
+
+function calcularSomar() {
   const n1 = parseFloat(document.getElementById("num1").value);
   const n2 = parseFloat(document.getElementById("num2").value);
-  const res = n1 + n2;
+  const res = somar(n1, n2);
   document.getElementById("resultado").innerText = "Resultado: " + res;
 }
-function subtrair() {
+
+function calcularSubtrair() {
   const n1 = parseFloat(document.getElementById("num1").value);
   const n2 = parseFloat(document.getElementById("num2").value);
-  const res = n1 - n2;
+  const res = subtrair(n1, n2);
   document.getElementById("resultado").innerText = "Resultado: " + res;
 }
-function multiplicar() {
+
+function calcularMultiplicar() {
   const n1 = parseFloat(document.getElementById("num1").value);
   const n2 = parseFloat(document.getElementById("num2").value);
-  const res = n1 * n2;
+  const res = multiplicar(n1, n2);
   document.getElementById("resultado").innerText = "Resultado: " + res;
 }
-function dividir() {
+
+function calcularDividir() {
   const n1 = parseFloat(document.getElementById("num1").value);
   const n2 = parseFloat(document.getElementById("num2").value);
-  if (n2 === 0) {
-    document.getElementById("resultado").innerText = "Erro: divisão p/ zero!";
-  } else {
-    const res = n1 / n2;
+  try {
+    const res = dividir(n1, n2);
     document.getElementById("resultado").innerText = "Resultado: " + res;
+  } catch (e) {
+    document.getElementById("resultado").innerText = "Erro: divisão p/ zero!";
   }
 }
