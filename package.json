@@ -24,6 +24,11 @@
   },
   "devDependencies": {
     "jest": "^30.1.3",
-    "eslint": "^9.35.0" 
+    "eslint": "^9.35.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
   }
 }
